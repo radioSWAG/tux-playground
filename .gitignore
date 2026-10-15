@@ -1,0 +1,13 @@
+# ключи и сертификаты
+*.pem
+*.key
+id_*
+!*.pub
+# секреты
+.env
+*.secret
+secrets/
+# мусор
+*.log
+*.swp
+.DS_Store
