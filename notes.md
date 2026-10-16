@@ -14,7 +14,7 @@
 - After install: ISO ejected, first login works, snapshot phase-01-clean-install
 - Note: enp0s8 has no IPv4 yet, so boot waits about 2 minutes. Fix in phase 2
 
-## Phase 2(not full): network and some configs
+## Phase 2: network and some configs
 - problem: enp0s8 (host-only) had no IPv4, boot waited ~2 minutes for network, dats was too long (you can replace enp0s8 to your own interface name)
 - fix: static IP 192.168.56.10/24 on enp0s8 in /etc/netplan/00-installer-config.yaml
 - applied with 'netplan try', which rolls back automatically if the connection breaks
@@ -25,4 +25,3 @@
 - set my timezone (sudo timedatectl set-timezone YourTimeZoneNameWithSlash), its very important for logs, TLS-sertificates and other stuff.
 - add some useful alias into .bashrc, check it in config/dotfiles/
 - installed: vim, btop, tree, wget, git, unzip, bash-completion, nmap, traceroute(note: be careful with vim, its take about 4 minutes for me to escape from it ;3 )
-
