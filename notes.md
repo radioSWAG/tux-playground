@@ -23,5 +23,6 @@
 - enable SSH connection from PowerShell
 - update & upgrade system
 - set my timezone (sudo timedatectl set-timezone YourTimeZoneNameWithSlash), its very important for logs, TLS-sertificates and other stuff.
-- lil modify for .bashrc
-- Note: dont forget bout step 2.5(for myself)
+- lil modify for .bashrc(not ready for push)
+- installed: vim, btop, tree, wget, git, unzip, bash-completion, nmap, traceroute(note: be careful with vim, its take about 4 minutes for me to escape from it ;3 )
+
