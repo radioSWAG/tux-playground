@@ -1,9 +1,57 @@
 # tux-playground
 
-A safe place to break Linux and make friends with Tux.
+**A safe place to break Linux and make friends with Tux.**
 
-**Status:** work in progress. Building v0.1: Ubuntu Server 26.04 LTS on VirtualBox.
+A home admin lab on Ubuntu Server 26.04 LTS, built step by step in VirtualBox and documented in public. The end goal is a playground anyone can fork: build the server yourself, or start with a ready one and practice breaking and fixing it.
 
-**Plan:** build a home admin lab step by step, then turn it into a playground that others can fork and do whatever the want
+> **Status: work in progress.** I'm building this in the open as I learn. Nothing here is a finished product yet, see the [roadmap](#roadmap) for what exists today.
 
-License: MIT
+## Who is this for
+
+- Students and beginners who want to learn Linux administration by doing, not only by reading
+- People on **Windows + VirtualBox** (most existing labs assume a Linux host)
+- Anyone who wants a safe server to break, so they learn to fix real problems
+
+## Two ways to use it (planned)
+
+| Mode | What it is |
+| --- | --- |
+| **Build-along** | Follow the phases and build the server yourself, step by step |
+| **Playground** | Start with a ready-made server and run break-and-fix scenarios on it |
+
+## What the server will cover
+
+SSH hardening, firewall (UFW) and fail2ban, users and permissions, updates, LVM, systemd services and timers, Bash scripts and backups, Docker, Nginx with TLS, monitoring with Prometheus and Grafana, and finally Ansible to rebuild everything from code.
+
+## Roadmap
+
+| Phase | Topic                                              | Status      |
+| ----- | -------------------------------------------------- | ----------- |
+| 0     | Preparation: VirtualBox, ISO, repository           | Done        |
+| 1     | Install Ubuntu Server 26.04 LTS                    | Done        |
+| 2     | First login and base setup (static IP, SSH, tools) | Done        |
+| 3     | SSH keys and hardening                             | Done        |
+| 4     | Firewall (UFW) and fail2ban                        | In progress |
+| 5-8   | Users, updates, LVM, systemd                       | Planned     |
+| 9-10  | Backups, Docker                                    | Planned     |
+| 11-12 | Nginx and TLS, monitoring                          | Planned     |
+| 13    | Break and fix scenarios                            | Planned     |
+| 14    | Ansible: rebuild the whole server from code        | Planned     |
+
+## Repository layout
+
+| Path | What is inside |
+| --- | --- |
+| `notes.md` | Step-by-step notes on what I did and why |
+| `configs/` | Server configs (never keys or passwords) |
+| `docs/` | Guides (English and Russian), in progress |
+| `scenarios/`, `scripts/`, `ansible/`, `compose/` | Planned |
+
+## Feedback and contributions
+
+I'm a student learning DevOps and sysadmin skills, so feedback is very welcome: mistakes, unclear steps, ideas for break-and-fix scenarios. Please open an issue.
+
+## License
+
+[MIT](LICENSE)
+
