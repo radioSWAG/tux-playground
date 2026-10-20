@@ -30,5 +30,10 @@
 - created an ed25519 key pair on the Windows host, protected by a passphrase
 - mistake: first ran ssh-keygen while loggen in to the server, so the keys landed on the server with a broken file name (PowerShell syntax does not work in Linux). So I'm deleted them and recreated the pair on Windows(not the Server!)
 - lesson: the private key must live on the machine you connected FROM, never on the server
-- next: copy the public key to ~/.ssh/authorized_keys, test key login, the harden sshd
-- test test
+- public key added to ~/.ssh/authorized_keys on the server (permissions 700/600)
+- hardened sshd with /etc/ssh/sshd_config.d/10-hardening.conf:
+  key-only auth, no root login possible, AllowUsers, MaxAuthTries 3
+- checked config with sshd -t and sshd -T, tested in a second session before closing the first
+  firstly just login like ssh user@192.168.56.10(the server password should not be requested), secondly try ssh -o PubkeyAuthentication=no lab(login with password), and finally ssh root@192.168.56.10 for login as root(in second and third scenario the output in CLI must be "Permission denied")
+- config copy saved in configs/ssh/
+- сlient side: ~/.ssh/config on Windows with a "Host lab" alias, so I can connect with just "ssh lab"
