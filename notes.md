@@ -1,7 +1,7 @@
 # Tux Playground notes
 
 ## Phase 0: preparation
-- Host: Windows with VirtualBox
+- Host: Windows 11 with VirtualBox
 - ISO: Ubuntu Server 26.04 LTS, SHA256 checked
 - Repo: tux-playground on GitHub, MIT license
 
