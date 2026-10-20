@@ -31,3 +31,4 @@
 - mistake: first ran ssh-keygen while loggen in to the server, so the keys landed on the server with a broken file name (PowerShell syntax does not work in Linux). So I'm deleted them and recreated the pair on Windows(not the Server!)
 - lesson: the private key must live on the machine you connected FROM, never on the server
 - next: copy the public key to ~/.ssh/authorized_keys, test key login, the harden sshd
+- test test
