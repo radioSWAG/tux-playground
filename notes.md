@@ -37,3 +37,13 @@
   firstly just login like ssh user@192.168.56.10(the server password should not be requested), secondly try ssh -o PubkeyAuthentication=no lab(login with password), and finally ssh root@192.168.56.10 for login as root(in second and third scenario the output in CLI must be "Permission denied")
 - config copy saved in configs/ssh/
 - сlient side: ~/.ssh/config on Windows with a "Host lab" alias, so I can connect with just "ssh lab"
+
+## Phase 4: Firewall and Fail2ban
+- check out my open ports via ports command(alias of sudo ss -tulpn, check out 
+- configurated my UFW firewall for allow only devices from my local network to connect by port 22
+- created script(already in repo scripts/) for firewall setup
+- try to connect from WSL to my server via nmap -Pn 192.168.56.10 command and it show only port 22 opened(success!)
+- installed and configurated fail2ban
+- important(!): do not configure jail.conf itself, after every udate it will update too, all settings only in .local files
+- first Breask & Fix: try to connect from WSL with password and get banned(i'm in ban) and later fix it later
+- more info it incedents/001-banned-myself.md
