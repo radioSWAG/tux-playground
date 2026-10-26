@@ -45,5 +45,5 @@
 - try to connect from WSL to my server via nmap -Pn 192.168.56.10 command and it show only port 22 opened(success!)
 - installed and configurated fail2ban
 - important(!): do not configure jail.conf itself, after every udate it will update too, all settings only in .local files
-- first Breask & Fix: try to connect from WSL with password and get banned(i'm in ban) and later fix it later
-- more info it incedents/001-banned-myself.md
+- first Breask & Fix: try to connect from Windows host with password and get banned(i'm in ban) and fix it later
+- more info about it in incedents/001-banned-myself.md
