@@ -47,3 +47,8 @@
 - important(!): do not configure jail.conf itself, after every udate it will update too, all settings only in .local files
 - first Breask & Fix: try to connect from Windows host with password and get banned(i'm in ban) and fix it later
 - more info about it in incedents/001-banned-myself.md
+
+## Phase 5: Users and Rights
+- create 2 users(dev and intern), group and them into it
+- checked what dev can do and what can't
+
