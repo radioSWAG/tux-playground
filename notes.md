@@ -51,4 +51,4 @@
 ## Phase 5: Users and Rights
 - create 2 users(dev and intern), group and them into it
 - checked what dev can do and what can't
-
+- create shared directory and change owner to root
