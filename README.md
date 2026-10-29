@@ -32,7 +32,10 @@ SSH hardening, firewall (UFW) and fail2ban, users and permissions, updates, LVM,
 | 2     | First login and base setup (static IP, SSH, tools) | Done        |
 | 3     | SSH keys and hardening                             | Done        |
 | 4     | Firewall (UFW) and fail2ban                        | Done        |
-| 5-8   | Users, updates, LVM, systemd                       | In Progress |
+| 5     | Users,groups and sudo                              | In Progress |
+| 6     | Packages and updates                               | Planned     |
+| 7     | LVM and file systems                               | Planned     |
+| 8     | systemd and journals                               | Planned     |
 | 9-10  | Backups, Docker                                    | Planned     |
 | 11-12 | Nginx and TLS, monitoring                          | Planned     |
 | 13    | Break and fix scenarios                            | Planned     |
@@ -42,9 +45,9 @@ SSH hardening, firewall (UFW) and fail2ban, users and permissions, updates, LVM,
 
 | Path | What is inside |
 | --- | --- |
-| `notes.md` | Step-by-step notes on what I did and why |
+| `notes.md` | These will be my notes on what I did during each phase |
 | `configs/` | Server configs |
-| `incidents/` | Various incidents and situations that I have encountered or intentionally created to test certain functions
+| `incidents/` | Various incidents and situations that I have encountered or intentionally created to test certain functions |
 | `scripts/` | Any scripts that i create by myself and using on server |
 | `scenarios/`, `ansible/`, `compose/`, `docs` | Planned |
 
