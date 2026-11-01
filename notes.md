@@ -52,3 +52,11 @@
 - create 2 users(dev and intern), group and them into it
 - checked what dev can do and what can't
 - create shared directory and change owner to root
+
+## Raw ideas
+- [ ] separate phase or phases about CI/CD, GitOps or GitHub Actions
+- [ ] mini "bare metal" pc like v2.0 of my server with hardware level troubleshooting
+- [ ] hosting the minecraft server track for the playground
+- [ ] QoL scripts that I write by myself
+- [ ] maybe different CLI for more comfortable work, try zsh/fish/tmux
+- [ ] "benchmark" where run many Docker Containers to test server's stability
