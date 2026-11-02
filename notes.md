@@ -52,6 +52,13 @@
 - create 2 users(dev and intern), group and them into it
 - checked what dev can do and what can't
 - create shared directory and change owner to root
+- gave intern restricted sudo via '/etc/sudoers.d/intern': 'only systemctl status ssh' and 'journalctl -u ssh'
+because intern doesn't need full root(least privilege!)
+- practiced 'usermod -L/-U'(like lock/unlock) and 'deluser --remove-home' for total deletion
+- also root over SSH is diabled, so every 'sudo' call is tied to a real person in the logs
+
+## Phase 6: Packages and auto update
+
 
 ## Raw ideas
 - [ ] separate phase or phases about CI/CD, GitOps or GitHub Actions
