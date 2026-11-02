@@ -32,9 +32,9 @@ SSH hardening, firewall (UFW) and fail2ban, users and permissions, updates, LVM,
 | 2     | First login and base setup (static IP, SSH, tools) | Done        |
 | 3     | SSH keys and hardening                             | Done        |
 | 4     | Firewall (UFW) and fail2ban                        | Done        |
-| 5     | Users,groups and sudo                              | In Progress |
-| 6     | Packages and updates                               | Planned     |
-| 7     | LVM and file systems                               | Planned     |
+| 5     | Users,groups and sudo                              | Done        |
+| 6     | Packages and updates                               | Done        |
+| 7     | LVM and file systems                               | In progress |
 | 8     | systemd and journals                               | Planned     |
 | 9-10  | Backups, Docker                                    | Planned     |
 | 11-12 | Nginx and TLS, monitoring                          | Planned     |
