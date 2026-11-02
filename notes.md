@@ -58,7 +58,10 @@ because intern doesn't need full root(least privilege!)
 - also root over SSH is diabled, so every 'sudo' call is tied to a real person in the logs
 
 ## Phase 6: Packages and auto update
-
+- explore APT: 'apt show/policy','dpkg -L/-S', 'apt-mark hold/unhold'(for fix version of programm)
+- checked unattended-upgrades is on ('20auto-upgrades`) and added my own
+  override '52unattended-upgrades-local` (remove unused kernels/deps, no auto-reboot).
+- verified with 'unattended-upgrade --dry-run --debug`.
 
 ## Raw ideas
 - [ ] separate phase or phases about CI/CD, GitOps or GitHub Actions
