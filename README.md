@@ -21,7 +21,7 @@ A home admin lab on Ubuntu Server 26.04 LTS, built step by step in VirtualBox an
 
 ## What the server will cover
 
-SSH hardening, firewall (UFW) and fail2ban, users and permissions, updates, LVM, systemd services and timers, Bash scripts and backups, Docker, Nginx with TLS, monitoring with Prometheus and Grafana, and finally Ansible to rebuild everything from code.
+SSH hardening, firewall (UFW) and fail2ban, users and permissions, updates, LVM, systemd services and timers, Bash scripts and backups, Docker, Nginx with TLS, monitoring with Prometheus and Grafana, Ansible,CI/CD pipeline.
 
 ## Roadmap
 
@@ -36,10 +36,11 @@ SSH hardening, firewall (UFW) and fail2ban, users and permissions, updates, LVM,
 | 6     | Packages and updates                               | Done        |
 | 7     | LVM and file systems                               | In progress |
 | 8     | systemd and journals                               | Planned     |
-| 9-10  | Backups, Docker                                    | Planned     |
+| 9-10  | Bash scripts, backups, Docker                      | Planned     |
 | 11-12 | Nginx and TLS, monitoring                          | Planned     |
 | 13    | Break and fix scenarios                            | Planned     |
-| 14    | Ansible: rebuild the whole server from code        | Planned     |
+| 14    | Ansible, CI and security audit                     | Planned     |
+| 15    | CI/CD, GitOps, GitLab CI                           | Planned     |
 
 ## Repository layout
 
